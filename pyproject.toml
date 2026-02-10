@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hr-agent-saas"
+version = "0.1.0"
+description = "Recruiting automation SaaS template for screening, ranking, scheduling, and tracking."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "erron.ai"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/erron-ai/hr-agent-saas"
+Issues = "https://github.com/erron-ai/hr-agent-saas/issues"
+
+[project.scripts]
+hr-agent-saas = "hr_agent_saas.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
